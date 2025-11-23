@@ -33,36 +33,6 @@
 - Maven 3.6+
 - База данных (H2 по умолчанию, можно использовать PostgreSQL, MySQL, MongoDB)
 
-## Установка и сборка
-
-1. **Клонируйте репозиторий:**
-```bash
-git clone <repository-url>
-cd integration
-```
-
-2. **Соберите проект:**
-```bash
-mvn clean package
-```
-
-3. **Настройте конфигурацию:**
-   
-   Отредактируйте файл `src/main/java/ru/integration/Config.java`:
-   ```java
-   public static final int STUDENT_ID = ваш_student_id;
-   public static final String BASE_API_URL = "http://212.237.219.35:8080/";
-   ```
-   
-   **⚠️ ВАЖНО:** Убедитесь, что преподаватель зафиксировал за вами `STUDENT_ID`!
-
-4. **Настройте БД (опционально):**
-   
-   Для использования другой БД отредактируйте `src/main/resources/META-INF/persistence.xml`:
-   - PostgreSQL: замените драйвер и URL
-   - MySQL: замените драйвер и URL
-   - И т.д.
-
 ## Запуск
 
 После сборки запустите приложение:
