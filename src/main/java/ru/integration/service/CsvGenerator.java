@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class CsvGenerator implements Processor {
     private static final Logger logger = LoggerFactory.getLogger(CsvGenerator.class);
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
     
     @Override
     public void process(Exchange exchange) throws Exception {
